@@ -15,3 +15,12 @@ echo "[eventlistener:crashxmpp]
 command=/usr/bin/env python /usr/local/bin/crashxmpp -u username@domain.com -w password -m notificated_users -s serveraddress -o serverport
 events=PROCESS_STATE_EXITED
 " > /etc/supervisor/crashxmpp.conf
+
+=================
+dependencies
+=================
+supervisor
+twisted.core
+  - twisted.words
+  - twisted.names
+
