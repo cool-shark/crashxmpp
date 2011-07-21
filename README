@@ -1,0 +1,17 @@
+=================
+crashxmpp
+=================
+
+crasxmpp, send message to one or multiple xmpp account when application crash, crasxmpp doesn't watch running applications.
+
+=================
+installation & running
+=================
+git clone https://github.com/cool-shark/crashxmpp
+cd crashxmpp
+python setup.py install 
+
+echo "[eventlistener:crashxmpp]
+command=/usr/bin/env python /usr/local/bin/crashxmpp -u username@domain.com -w password -m notificated_users -s serveraddress -o serverport
+events=PROCESS_STATE_EXITED
+" > /etc/supervisor/crashxmpp.conf
