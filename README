@@ -2,7 +2,7 @@
 crashxmpp
 =================
 
-crasxmpp, send message to one or multiple xmpp account when application crash, crasxmpp doesn't watch running applications.
+crashxmpp is a notifier tool with xmpp protocol to monitor your processes. Basicly, sends message if something goes wrong with your processes.
 
 =================
 installation & running
